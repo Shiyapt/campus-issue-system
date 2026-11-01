@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f3f5f9;
+  color: #1d2433;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1f3a8a;
+  color: #fff;
+}
+header nav a {
+  color: #fff;
+  margin-left: 16px;
+  text-decoration: none;
+}
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.narrow {
+  max-width: 520px;
+  margin: 24px auto;
+}
+.center {
+  text-align: center;
+}
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  margin-top: 4px;
+  border: 1px solid #c5ccdb;
+  border-radius: 8px;
+  font: inherit;
+}
+button {
+  padding: 9px 14px;
+  border: 1px solid #c5ccdb;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+button.primary {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+button.danger {
+  background: #dc2626;
+  color: #fff;
+  border-color: #dc2626;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.tabs button.on {
+  background: #2563eb;
+  color: #fff;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+}
+.err {
+  color: #dc2626;
+}
+.token {
+  letter-spacing: 2px;
+  color: #2563eb;
+}
+.badge {
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 99px;
+  background: #e5e7eb;
+}
+.badge.AI_VERIFIED,
+.badge.VERIFIED {
+  background: #bbf7d0;
+}
+.badge.AI_FLAGGED,
+.badge.REJECTED {
+  background: #fecaca;
+}
+.badge.SENT_TO_MANAGEMENT,
+.badge.STAFF_REQUESTED {
+  background: #fde68a;
+}
+.badge.RESOLVED {
+  background: #86efac;
+}
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+.media img,
+.media video {
+  max-height: 150px;
+  border-radius: 8px;
+}
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+.timeline li {
+  border-left: 3px solid #2563eb;
+  padding: 4px 12px;
+  margin: 8px 0;
+}
+.voice {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.login-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.login-actions button {
+  flex: 1;
+}
+
+.change-password-btn {
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.change-password-btn:hover {
+  background: #e0e7ff;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 15px;
+}
+
+.password-modal {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.password-modal h2 {
+  margin-top: 0;
+}
+
+.password-modal label {
+  display: block;
+  margin: 15px 0;
+}
+
+.password-modal input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  margin-top: 7px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.password-modal .primary {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+}
